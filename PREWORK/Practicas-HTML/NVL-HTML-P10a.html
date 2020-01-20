@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Encuesta de Satisfacción de Producto</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+<form method="post" action="miservidor.php">
+    <div>
+      <label for=”cp”>Código postal:</label>
+      <input id=”cp” type=”text”>
+    </div>
+    <div>
+      <label for=”satisfaccion”>Nivel de satisfacción:</label>
+      <p>Escoge una opción siendo 1 la más baja y 5 la más alta </p>
+      <select id=”satisfaccion”>
+        <option value=”1”>1</option>
+        <option value=”2”>2</option>
+        <option value=”3”>3</option>
+        <option value=”4”>4</option>
+        <option value=”5”>5</option>
+      </select>
+  </div>
+    <div>
+      <label for=”email”>Tu email:</label>
+      <input id=”email” type=”text”>
+    </div>
+  <div>
+    <label for=”comentario-negativo”>Puntos negativos del producto:</label>
+    <textarea id=”comentario-negativo”></textarea>
+  </div>
+   <div>
+      <label for=”calidad”>Evalue la calidad del producto:</label>
+      <select id=”calidad”>
+        <option value=”excelente”>Excelente</option>
+        <option value=”buena”>Buena</option>
+        <option value=”regular”>Regular</option>
+        <option value=”pesima”>Pesima</option>
+      </select>
+  </div>
+  <input type=”submit” value=”Enviar”> 
+</form>
+                    
+   </body>
+  </html>

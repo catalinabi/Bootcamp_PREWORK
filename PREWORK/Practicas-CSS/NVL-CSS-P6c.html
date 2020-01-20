@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    h1 {font: 40px arial black;background-color: #3f9;}
+
+ul {
+  border: 2px solid #fabada;
+  width: 200px;
+}
+
+ul > h2 {
+  font: 30px calibri;
+}
+
+p {
+  font: 12px verdana;
+}
+
+div > h2 {
+  font: 25px georgia;
+  color: #b4c5d6;
+}
+
+div {
+  width: 800px;
+}
+
+div > p {
+  font-size: 15px;
+}
+
+span {
+  background-color: #fabada;
+  font: 15px arial;
+}
+
+span + p {
+  color: #333;
+  background-color: #ddd;
+}
+
+img {
+  width: 400px;
+  height: 300px;
+}
+
+form {
+  background-color: #dd3;
+  font: 13px tahoma;
+}
+
+[id=opinion] {
+  width: 400px;
+  height: 200px;
+}
+
+[id] {
+  width: 400px;
+}
+
+h2> span {
+  font: 12px verdana;
+  background-color: #fff;
+
+}
+[cantidad-gramos="800"] {
+  background-color: #0f0;
+}
+/*Busca todos los atributos data-cantidad cuyo valor empiece por numero-*/
+[data-cantidad|=numero]{font-size:17px;font-style:italic;}
+  </style>
+  </head>
+<body>
+    <h1>Crema de calabaza y boniato</h1>
+  
+  <ul>
+    <h2>Ingredientes <span data-cantidad="numero-6personas">(6 personas)</span></h2>
+    <li cantidad-gramos="800g" data-cantidad="numero-800g">800 g de calabaza</li>
+    <li>3 cebolletas</li>
+    <li>Aceite de oliva virgen</li>
+    <li>Sal</li>
+    <li>2 boniatos</li>
+    <li>50 g de arroz</li>
+  </ul>
+
+  <div>
+    <h2>Elaboración del plato</h2>
+    <p>Retira la primera capa de las cebolletas, córtalas en dados y ponlos a rehogar en la olla rápida con un chorrito de aceite. Pela la calabaza y los boniatos, trocea y añádelos. Sazona y rehoga todo durante 5-6 minutos.</p>
+
+    <p>Pasado este tiempo, cubre con agua, cierra la olla y cuece todo durante 2-3 minutos desde el momento en que suba la válvula. Tritura los ingredientes hasta que consigas una crema homogénea. Resérvala caliente.</p>
+
+    <p>Calienta una sartén con abundante aceite. Cuando esté caliente, agrega una porción pequeña de arroz salvaje y fríelo. Retira y escúrrelos sobre un plato cubierto con papel absorbente de cocina. Repite el proceso con el resto del arroz salvaje.</p>
+
+    <p>Sirve la crema y acompáñala con el arroz salvaje frito.</p>
+    <span>Consejo:</span><p>Hacer una crema casera no cuesta nada. Os recomiendo preparar una buena cantidad y recordad que lo que no vayáis a utilizar la podéis congelar para otra ocasión.</p>
+  </div>
+
+  <div>
+    <h2>Información nutricional</h2>
+    <p>En el plato de hoy predomina el grupo de las verduras y hortalizas superando el 50% recomendado debido a la ausencia de alimentos de origen animal. Sin embargo la cantidad de calabaza por comensal es la adecuada: 200 gr</p>
+
+    <p>Los alimentos energéticos se acercan al 25% recomendado.</p>
+
+    <p>Se recomienda añadir un salteado de pollo o unos huevos duros a la crema para mejorar el aporte de proteínas, hierro y vitaminas del grupo B y así obtener un plato más nutritivo.</p>
+
+    <p>Este plato supone una buena fuente de vitaminas antioxidantes que potencian nuestras defensas ayudándonos a mantener un buen estado de salud.</p>
+
+    <p>Gracias a la presencia de los boniatos y del arroz es también un plato energético recomendado para los días de mayor actividad física.</p>
+  </div>
+
+  <div>
+    <p>Una vez terminado el plato, tendría que tener un aspecto como éste:</p>
+    <img src="https://www.hogarmania.com/archivos/201910/crema-calabaza-editorial-1280x720x80xX.jpg">
+  </div>
+
+  <form method="post" action="miservidor.php">
+    <div>
+      <h3>Comenta tu experiencia:</h3>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input id="email" type="text">
+    </div>
+    <div>
+      <label for="opinion">Di tu opinión:</label>
+      <textarea id="opinion"></textarea>
+    </div>
+    <div>
+      <label for="puntuacion">Puntúa la calidad del plato:</label>
+      <select id="puntuacion">
+        <option value="5">5</option>
+        <option value="4">4</option>
+        <option value="3">3</option>
+        <option value="2">2</option>
+        <option value="1">1</option>
+      </select>
+    </div>
+    <input type="submit" value="Enviar">    
+  </form>
+  </body>
+
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+* {box-sizing: border-box;}
+html {font-family: 'Open Sans', sans-serif;color: #343a40;}
+body {margin: 0;padding: 0;}
+header{height: 150px;width: 100%;overflow: auto;background-color: #16a085;color: #f2f2f2;}
+  header figure{float: left;width:15%;}
+  header figure img {padding:1%;width:70px;}
+  header h2 {float:left;width: 80%;}
+
+
+main {overflow: auto;}
+.col {float: left;}
+.menu {width: 20%; padding: 10px;}
+.central { width: 55%;padding: 20px;}
+.derecha {width: 25%;padding: 20px;
+
+.menu > ul {list-style: none;padding: 0; margin: 0;}
+  .menu ul>li {margin-left: 10px;}
+
+.menu a{
+    display: block;
+    padding: 5px;
+    color: inherit;
+    border-bottom: 1px solid #cccccc;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: white;
+    background-color: #16a085;
+}
+
+.menu h4, .derecha h4 {
+    background-color: #16a085;
+    padding: 5px;
+    color: #f2f2f2;
+    border-radius: 2px;
+}
+
+.post {
+    width:100%;
+    background-color: #f2f2f2;
+    margin: 10px auto;
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+    padding: 20px;
+    overflow: auto;
+}
+.post>h3 {
+    border-bottom: 1px solid #cccccc;
+    color: #16a085;
+}
+.post>img {
+    display: block;
+    float: left;
+    margin-right: 15px;
+    width: 30%;
+    box-sizing: border-box;
+    padding: 3px;
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+    background-color: white;
+    overflow: auto;
+}
+.post > p {
+    float: left;
+    width: 60%;
+    padding: 0;
+    margin: 0;
+}
+
+.btn {
+    clear: both;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #cccccc;
+}
+.btn button {
+    display: block;
+    border: none;
+    border-radius: 3px;
+    background-color: #16a085;
+    padding: 10px;
+    color: #f2f2f2;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.derecha a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 3px;
+}
+.derecha a:hover {
+    color: #16a085;
+    font-weight: bold;
+}
+.tag {
+    display: inline-block;
+    padding: 5px;
+    font-size: 0.7em;
+    background-color: #3498db;
+    border-radius: 10px;
+    color: #f2f2f2;
+    cursor: pointer;
+}
+.tag:hover {
+    background-color: #e67e22;
+    font-size: 0.8em;
+}
+.tags {
+    margin-top: 5px;
+    font-size: 0.8em;
+    color: #7f8c8d;
+}
+footer {
+    padding: 30px;
+    height: 200px;
+    background-color: #34495e;
+    color: #f2f2f2;
+}
+footer span {
+    float: left;
+    width: 30%;
+}
+footer ul {
+    font-size: 0.8em;
+    border-left: 1px solid #f2f2f2;
+    margin-left: 30%;
+    padding-left: 10px;
+    cursor: pointer;
+}
+footer .social>i {
+    display: inline-block;
+    font-size: 2em;
+    margin-left: 5px;
+
+}
+  </style>
+  </head>
+<body>
+<header>
+    <figure>
+      <img src="https://www.desarrollolibre.net/public/images/example//css/css3.png" alt="CSS">
+    </figure>
+   
+    <h2>El blog del CSS</h2>
+ 
+</header>
+<main>
+  <div class="col menu">
+    <h4 class="post_menu">Posts</h4>
+    <ul>
+      <li><a href="#1">Bienvenidos al blog</a></li>
+      <li><a href="#2">Los puzzles y la imaginación</a></li>
+      <li><a href="#3">Los puzzles (segunda parte)</a></li>
+      <li><a href="#4">El tiempo corre</a></li>
+      <li><a href="#5">Planificar el día</a></li>
+      <li><a href="#6">Viajar fuera</a></li>
+
+    </ul>
+  </div>
+  <div class="col central">
+    <div class="post">
+      <h3 id="1">Bienvenidos al blog</h3>
+      <img src="images/among-giants-1375605-640x480.jpg" alt="post1">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolore eaque illum neque obcaecati odio placeat sapiente suscipit tenetur voluptate! Consequuntur earum illo ipsum libero maxime minus provident quam quas, tempora totam voluptate voluptates. Ab adipisci amet architecto assumenda culpa debitis dolore dolorem doloribus, ducimus, ea error fugiat inventore labore maiores molestiae omnis porro quo reiciendis, tempore totam ullam voluptatem!</p>
+      <div class="btn">
+        <button>Leer más</button>
+      </div>
+      <div class="tags"><i class="fas fa-tags"></i> TAGS: personal</div>
+    </div>
+    <div class="post">
+      <h3 id="2">Los puzzles y la imaginación</h3>
+      <img src="images/j-lb-1199987-638x478.jpg" alt="post2">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias animi aspernatur aut autem consequuntur culpa cupiditate dignissimos distinctio dolores eius eligendi fugiat iusto laborum magnam neque, odit optio pariatur porro possimus, provident qui quia quisquam quo repellendus rerum similique temporibus velit voluptate. Et eum exercitationem id iusto maiores molestiae nesciunt, nulla quam quasi suscipit tempora ut veniam voluptatibus?</p>
+      <div class="btn">
+        <button>Leer más</button>
+      </div>
+      <div class="tags"><i class="fas fa-tags"></i> TAGS: puzzles, juegos</div>
+    </div>
+    <div class="post">
+      <h3 id="3">Los puzzles (segunda parte)</h3>
+      <img src="images/puzzle-1427979-640x480.jpg" alt="post3">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eius eveniet ex explicabo fuga illo incidunt molestiae natus, nostrum odio pariatur, quae quaerat quis reiciendis reprehenderit vel veritatis. Ab, architecto deleniti error explicabo iure numquam veritatis? Consequatur consequuntur culpa, dolorem et ex explicabo impedit ipsa ipsum magnam maxime natus nobis obcaecati perferendis perspiciatis quas quasi ratione sint sit totam, voluptatibus.</p>
+      <div class="btn">
+        <button>Leer más</button>
+      </div>
+      <div class="tags"><i class="fas fa-tags"></i> TAGS: puzzles, juegos</div>
+    </div>
+    <div class="post">
+      <h3 id="4">El tiempo corre</h3>
+      <img src="images/clock-1196246-640x480.jpg" alt="post4">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus amet animi assumenda, beatae culpa deleniti dignissimos distinctio dolorem dolores dolorum eaque eligendi eos error esse est excepturi explicabo inventore ipsa ipsam iste labore magni maxime nam nisi nobis non nostrum numquam officia omnis perspiciatis quibusdam quisquam sequi ut voluptas, voluptate voluptatibus. Exercitationem harum ipsa omnis quos sit, vel voluptas!</p>
+      <div class="btn">
+        <button>Leer más</button>
+      </div>
+      <div class="tags"><i class="fas fa-tags"></i> TAGS: organizacion, personal</div>
+    </div>
+    <div class="post">
+      <h3 id="5">Planificar el día</h3>
+      <img src="images/diary-page-1240501-639x506.jpg" alt="post5">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem beatae commodi, consequatur cum cupiditate debitis deleniti eaque eos et eum fugiat illum magni, minima molestiae natus nesciunt nobis odio odit quaerat quas quibusdam quod ratione recusandae sequi soluta sunt tempore unde vel velit veritatis voluptatem voluptatibus voluptatum! Animi atque consequatur dolor eius error facere illo maiores nesciunt numquam saepe.</p>
+      <div class="btn">
+        <button>Leer más</button>
+      </div>
+      <div class="tags"><i class="fas fa-tags"></i> TAGS: organización</div>
+    </div>
+    <div class="post">
+      <h3 id="6">Viajar fuera</h3>
+      <img src="images/bright-red-sunset-1446856-638x477.jpg" alt="post6">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad modi neque possimus sapiente. Cum, facilis, quasi. Accusantium adipisci amet, aspernatur commodi corporis eaque earum hic ipsa laborum nemo non quae quibusdam tempora? Accusantium adipisci aliquid architecto aspernatur blanditiis delectus earum enim et fugiat harum, laudantium magni modi nesciunt nostrum omnis perspiciatis repellat totam? Dignissimos ipsam possimus suscipit? Amet, sit.</p>
+      <div class="btn">
+        <button>Leer más</button>
+      </div>
+      <div class="tags"><i class="fas fa-tags"></i> TAGS: ciudades, viajes.</div>
+    </div>
+  </div>
+  <div class="col derecha">
+    <h4>Top posts</h4>
+    <ol>
+      <li><a href="#6">Viajar fuera</a></li>
+      <li><a href="#4">El tiempo corre</a></li>
+      <li><a href="#5">Planificar el dia</a></li>
+      <li><a href="#2">Los puzzles y la imaginación</a></li>
+      <li><a href="#1">Bienvenidos al blog</a></li>
+      <li><a href="#3">Los puzzles (segunda parte)</a></li>
+    </ol>
+    <h4>Tags</h4>
+    <span class="tag">Viajes</span> <span class="tag">Puzzles</span> <span class="tag">Organización</span> <span class="tag">Juegos</span> <span class="tag">Ciudades</span> <span class="tag">Personal</span>
+  </div>
+</main>
+
+<footer>
+  <span> &copy; 2019 Félix Nogales</span>
+ <ul>
+    <li>Política de privacidad </li>
+    <li>Contacto</li>
+    <li>Ofertas de viaje</li>
+    <li class="social"><i class="fab fa-facebook-square"></i> <i class="fab fa-twitter-square"></i> <i class="fab fa-linkedin"></i></li>
+  </ul>
+
+</footer>
+</body>
+</html>
+
