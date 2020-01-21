@@ -24,14 +24,17 @@
 //Creamos arrays para almacenar numeros pares e impares
 var pares =[];
 var impares=[];
-//Da 50 vueltas y va almacenando el numero random entre y 1 y 100 en el array numerosAzar
+//Da 50 vueltas y va almacenando el numero random entre y 1 y 100 en var numero
 for (var i = 0; i < 50; i++) {
   //almaceno un numero random de 1 a 100 
    var numero = Math.floor((Math.random() * 100) + 1);
+   //Si el numero es par
    if (numero % 2 == 0){
+    //Lo almacena en array par
         pares.push(numero);
          
     }else{
+    //si es impar lo almacena en array impar
         impares.push(numero);
     }
 }
@@ -44,11 +47,7 @@ document.write(pares+"<br />");
 document.write("NUMERO IMPARES: <br />");
 document.write(impares+"<br />");
 
-  //Creamos una funcion llamada desdel el blucle que almacena los numeros en los arrays par e impar en funcion de si el numero es par o impar
-  function verificarSiesPar(numerosAzar){
-    
 
-  }
  
 
  
