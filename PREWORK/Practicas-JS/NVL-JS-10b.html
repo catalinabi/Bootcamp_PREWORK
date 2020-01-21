@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio Final - Cuidado de mascotas</title>
+     <script type="application/javascript">
+      /*Asumiendo que Math.floor((Math.random() * 100) + 1); saca elementos al azar entre 1 y 100, queremos que hagas lo siguiente:
+ 
+
+      Saca 50 números al azar entre 1 y 100
+      Almacena los números que salgan impares en un array impares
+      Almacena los números que salgan pares en un array pares*/
+  
+	
+    //Crea un array donde se guarde en cada celda como primer elemento el día de la semana y como segundo el lugar donde se realiza el concierto.
+
+
+    
+</script>
+  </head>
+  <body>
+    <script type="application/javascript">
+
+//Creamos arrays para almacenar numeros pares e impares
+var pares =[];
+var impares=[];
+//Da 50 vueltas y va almacenando el numero random entre y 1 y 100 en el array numerosAzar
+for (var i = 0; i < 50; i++) {
+  //almaceno un numero random de 1 a 100 
+   var numero = Math.floor((Math.random() * 100) + 1);
+   if (numero % 2 == 0){
+        pares.push(numero);
+         
+    }else{
+        impares.push(numero);
+    }
+}
+
+
+//Imprmie en html el array con 50 digitos de numeros al azar entre 1 y 100
+
+document.write("NUMERO PARES: <br />");
+document.write(pares+"<br />");
+document.write("NUMERO IMPARES: <br />");
+document.write(impares+"<br />");
+
+  //Creamos una funcion llamada desdel el blucle que almacena los numeros en los arrays par e impar en funcion de si el numero es par o impar
+  function verificarSiesPar(numerosAzar){
+    
+
+  }
+ 
+
+ 
+ </script>
+ 
+   
+
+  </body>
+</html>
