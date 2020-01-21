@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio Final - Cuidado de mascotas</title>
+     <script type="application/javascript">
+    var dias = 'Lunes,Martes,Miercoles,Jueves,Viernes,Sabado,Domingo';
+	var arrayDias = dias.split(",");
+
+	var ciudades = 'Madrid.Sevilla.Barcelona.Valencia.Zaragoza.Bilbao.Donosti';
+	var arrayCiudades = ciudades.split(".");
+    //Crea un array donde se guarde en cada celda como primer elemento el día de la semana y como segundo el lugar donde se realiza el concierto.
+
+
+    
+</script>
+  </head>
+  <body>
+    <script type="application/javascript">
+
+
+var conciertos = [];
+
+for (var i = 0; i < arrayDias.length; i++) {
+   conciertos.push([arrayDias[i],arrayCiudades[i]]);
+}
+
+document.write(conciertos);
+ 
+ </script>
+ 
+   
+
+  </body>
+</html>
