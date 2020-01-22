@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio Final - Cuidado de mascotas</title>
+     <script type="application/javascript">
+     
+
+
+    
+</script>
+  </head>
+  <body>
+    <script type="application/javascript">
+
+       /*Asumiendo que Math.floor((Math.random() * 100) + 1); saca elementos al azar entre 1 y 100, queremos que hagas lo siguiente:
+ 
+
+      Saca 50 números al azar entre 1 y 100
+      Almacena los números que salgan impares en un array impares
+      Almacena los números que salgan pares en un array pares*/
+  
+  
+    //Crea un array donde se guarde en cada celda como primer elemento el día de la semana y como segundo el lugar donde se realiza el concierto.
+//funcion que imprime 3 arrays de numeros
+function obtenerNumeros (cantidad_numeros) {
+  var numeros = [];
+  var pares = [];
+  var impares = [];
+  var resultado = [];
+  //Bucle que se ejecuta 50 veces
+  for (var i=0; i<cantidad_numeros; i++) {
+    //cada vez que se recorre el bucle, se genera un numero aleatorio del 1 al 100 que se guarda en variable num
+    var num = Math.floor((Math.random()*100)+1)
+    //en array numeros se mete los numeros que se generan en el anterior caso
+    numeros.push(num);
+    //Si el numero generado es par
+    if(num%2===0) {
+      //se guarda este numero en array pares
+      pares.push(num);
+    }
+    else {
+      //si es impar se guarda en array impares
+      impares.push(num);
+    }
+  }//se cierra bucle
+  //se devuelven los 3 objetos 
+  document.write(numeros + "<br />");
+  document.write(pares + "<br />");
+  document.write(impares + "<br />")
+}
+//llamo a a funcion obtener numeros y le envio la cantidad de numeros que quiero generar
+obtenerNumeros(50);
+
+ 
+
+ 
+ </script>
+ 
+   
+
+  </body>
+</html>
