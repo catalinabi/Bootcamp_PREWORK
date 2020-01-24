@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio Final - Cuidado de mascotas</title>
+
+  </head>
+  <body>
+    <script type="application/javascript">
+
+/*Realiza una función, que será invocada desde el ámbito global, para calcular los n primeros números primos. Recordamos que un número primo, únicamente es divisible por sí mismo y por el 1
+Esa “n” que indica la cantidad de números a calcular es el parámetro de la función.*/
+ 
+ /*Numeros primos: 1,2,3,5,7,11,13*/
+
+/*var num,primo;
+num=parseInt(prompt("Introduce un número"));
+esPrimo(num);
+//calcularNumerosPrimos(10);
+
+function esPrimo(num) {
+  //Pintame un array de x numeros basandome en lo que ponga en (cantidadNumeros)
+ // var numerosPrimos=[];
+   for (var i=2; i<num; i++) {
+      if(num%i==0) {
+        document.write("vez"+i+"del bucle. No es primo el número: " + num +"<br />");
+        primo=false;
+      }else{
+         document.write("vez"+i+"del bucle. Es primo el número: " + num + "<br />");
+         primo=true;
+      }
+       
+}
+
+}*/
+
+
+numero = parseInt(prompt("Introduce un número"));
+var numeros = [];
+var cont= 0;
+
+for (var i = 1; i <=numero; i++){
+    if(esPrimo(i))
+    {
+        numeros.push(i);
+        document.write("El numero siguiente es primo:"+i+ "<br />");
+    }
+}
+
+document.write(numeros)+ "<br />";
+
+function esPrimo(i){
+     for (var j = 1; j <=i; j++){
+        if(i%j===0)
+        {
+            cont ++;
+        }
+      }//for
+  if(cont<=2){
+      cont=0;
+      return true;
+  }else{
+      cont=0;
+      return false;
+  }
+}//function
+
+
+
+
+
+
+ 
+
+ 
+ </script>
+ 
+   
+
+  </body>
+</html>
