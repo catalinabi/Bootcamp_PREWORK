@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio Final - Cuidado de mascotas</title>
+
+  </head>
+  <body>
+    <script type="application/javascript">
+
+/*Queremos realizar una función que detecte palíndromos. O_o.
+Sí, palíndromo. Son palabras o frases que da igual si las lees de izquierda a derecha, que de derecha a izquierda, vas a entender lo mismo.
+reconocer
+}*/
+
+
+var palab = prompt("Introduce una palabra");
+var cont= palab.length;
+var palabra = palab.split(' ').join('').toLowerCase();
+var palabraAlreves = palabra.split('').reverse().toString();
+var palabraAlreves2;
+document.write("La palabra tiene "+palabra.length+" caracteres <br />");
+document.write("La palabra es " + palabra + "<br>");
+document.write("La palabra contraria " + palabraAlreves + "<br>");
+
+comprobar(palabraAlreves);
+function comprobar(palabraAlreves){
+ 
+  for (var i = 0; i<palabra.length; i++){
+    palabraAlreves2=palabraAlreves.split(',').join('').toString();      
+  }
+    document.write("La palabra contraria2" + palabraAlreves2 + "<br>");
+
+    if(palabra==palabraAlreves2){
+      document.write("SI Es palindromo");
+    }else{
+      document.write("NO Es palindromo");
+    }
+}
+
+
+
+ 
+
+ 
+ </script>
+ 
+   
+
+  </body>
+</html>
